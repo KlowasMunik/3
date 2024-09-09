@@ -1,0 +1,66 @@
+######## Writing Functions ########
+# 1)
+# a.Write a function called "output_total()"
+#   parameters: subtotal, tax, tip(optional parameter)
+#   This function should calculate the total and print it
+def output_total(subtotal, tax, tip=0):
+  total = 
+# b. call the function below
+# 2)
+# a.Write a function called "split_bill()"
+#   parameters: amount, people
+#   This function should calc the split for each person and return it
+# b. call the function below
+
+
+######## END of Writing Functions ########
+
+######## Calling/Using Functions ########
+# returns true if number even, false otherwise
+def is_even(integer):
+  return integer % 2 == 0
+# accepts any number of letter grades. returns gpa
+# example: calc_gpa('A','B') or calc_gpa(class1,class2,class3)
+def calc_gpa(*args):
+  conversion = {'A':4, 'B': 3, 'C':2, 'D':1, 'F':0}
+  sum = 0
+  for grade in args:
+    sum += conversion[grade]
+  return sum/len(args)
+def reverse_string(string):
+  return string[::-1]
+
+# 1) Ask the user to enter a whole number and output true or    
+#    false based on if number is even or not
+
+
+# 2) Ask the user to enter letter grades for courses. You get to choose how many courses
+#    Store each into a variable and then pass them into the calc_gpa() function. 
+#    Output the user's gpa to 2 decimal places
+
+# 3) Ask the user to enter a string. Using the reverse_string()
+#    function, output to user "Your string reverse is: {string}"
+
+ 
+
+######## END of Writing Calling/Using Function ########
+
+
+######## Debugging Functions ########
+# 1) Look at this function:
+# def read_name(first,last)
+#   first = input("Enter your first name: ")
+#   last  = input("Enter your last name: ")
+#   return first
+#   return last
+# Question: What are two things wrong with this function?
+# Answers:
+# 1) Look at this function:
+# def calc_tax(tax=8.0,amnt)
+#   tax_amnt = amnt * tax/100
+#   print(f"Your tax amnt is{tax_amnt:.2f}")
+#   return tax_amnt
+# Question: What are two things wrong with this function?
+# Answers: 
+
+######## END of Debugging Functions ########
